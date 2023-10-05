@@ -258,6 +258,10 @@ abstract class FirebaseMessagingPlatform extends PlatformInterface {
     throw UnimplementedError('setAutoInitEnabled() is not implemented');
   }
 
+  Future<void> saveCookie({required String cookie}) {
+    throw UnimplementedError('saveCookie() is not implemented');
+  }
+
   /// Sets the presentation options for iOS based notifications when received in
   /// the foreground.
   ///

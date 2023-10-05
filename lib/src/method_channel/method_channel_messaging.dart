@@ -185,7 +185,8 @@ class MethodChannelFirebaseMessaging extends FirebaseMessagingPlatform {
     }
   }
 
-  Future<void> setCookie({required String cookie}) async {
+  @override
+  Future<void> saveCookie({required String cookie}) async {
     try {
       String? cookieSet = await channel.invokeMethod('setCookie', cookie);
       if (cookieSet == null) {
